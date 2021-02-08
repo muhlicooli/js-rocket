@@ -1,5 +1,5 @@
 .left{
-	background-color: gold;
+	background-color: midnightblue;
 	position: fixed;
 	width: 50%;
 	height: 100%;
@@ -8,7 +8,7 @@
 }
 
 .right{
-	background-color: steelblue;
+	background-color: midnightblue;
 	position: fixed;
 	width: 50%;
 	height: 100%;
@@ -20,9 +20,11 @@
 	position: absolute;
 	left: 50%;
 	bottom: 20px;
-	width: 20px;
+	width: 30px;
 	height: 100px;
-	background-color: indianred;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	background-color: tomato;
 	transition: bottom 7000ms;
 }
 
@@ -36,7 +38,7 @@ body.body-state4 .rocket{
 
 .ground{
 	position: absolute;
-	background-color: darkgreen;
+	background-color: teal;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -57,12 +59,27 @@ body.body-state3 .state3{display: block;}
 body.body-state4 .state4{display: block;}
 body.body-state5 .state5{display: block;}
 
-a{
-
-
+.state1,
+.state2,
+.state3,
+.state4,
+.state5{
+color: white;
+font-family: 'Lexend Mega', sans-serif;
+text-align: center;
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
+
 a.button{
-
-
+text-align: center;
+background-color: white;
+border-radius: 20px;
+padding: 10px;
+color: midnightblue;
+text-decoration: none;
 }
