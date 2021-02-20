@@ -1,10 +1,10 @@
 var timer = null;
-var countdownNumber = 5;
+var countdownNumber = 10;
 
 var changeState = function (state){
 	document.body.className = 'body-state' + state;
 	clearInterval(timer);
-	countdownNumber = 5;
+	countdownNumber = 10;
 	document.getElementById('countdown').innerHTML = countdownNumber;
 
 	//countdown
@@ -14,7 +14,12 @@ var changeState = function (state){
 			document.getElementById('countdown').innerHTML = countdownNumber;
 			if (countdownNumber <= 0){			
 			changeState(3);
-			} 
+			}; 
+
+			if (countdownNumber <= 5 && countdownNumber > 1){
+				//meow
+				document.getElementById('meow').className = 'meow show';
+			};
 		},500);
 	} 	
 
@@ -23,7 +28,7 @@ var changeState = function (state){
 			var randomNumber = Math.round(Math.random()*10);
 
 			// success
-			if (randomNumber > 3) {
+			if (randomNumber > 4) {
 				changeState(4);
 			// oh no
 			} else {
