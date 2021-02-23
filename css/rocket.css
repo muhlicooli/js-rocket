@@ -1,6 +1,11 @@
+body {
+
+}
+
 
 .left{
-	background-color: #87CEEB;
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 	position: fixed;
 	width: 50%;
 	height: 100%;
@@ -9,7 +14,8 @@
 }
 
 .right{
-	background-color: #87CEEB;
+	background: rgb(34,193,195);
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 	position: fixed;
 	width: 50%;
 	height: 100%;
@@ -59,8 +65,77 @@ body.body-state4 .rocket{
 	bottom: 0;
 	left: 0;
 	width: 4000px;
-	height: 50px;
+	height: 40px;
 	background: url('../img/ground.svg') no-repeat;
+}
+
+.cloud1 {
+	width: 119.0458px;
+	height: 70.891px;
+	position: absolute;
+	top: 10%;
+	background: url('../img/cloud1.svg') no-repeat 0 0;
+	left: -200px;
+	animation-name: cloud1;
+	animation-duration: 60s;
+	transform: scale(1.5);
+	animation-iteration-count: 5;
+}
+
+@keyframes cloud1 {
+	from {left: -200px;}
+	to {left:3000px;}
+}
+
+.cloud2 {
+	width: 143px;
+	height: 70.9px;
+	position: absolute;
+	top: 30%;
+	background: url('../img/cloud2.svg') no-repeat 0 0;
+	left: -300px;
+	animation-name: cloud2;
+	animation-duration: 85s;
+	transform: scale(2);
+	animation-iteration-count: 5;
+	animation-delay: 2s;
+}
+
+@keyframes cloud2 {
+	from {left: -300px;}
+	to {left:3000px;}
+}
+
+.cloud3 {
+	width: 143px;
+	height: 70.9px;
+	position: absolute;
+	top: 30%;
+	background: url('../img/cloud3.svg') no-repeat 0 0;
+	left: 600px;
+	animation-name: cloud3;
+	animation-duration: 60s;
+	transform: scale(1.4);
+}
+
+@keyframes cloud3 {
+	from {left: 600px;}
+	to {left:3000px;}
+}
+
+.sun {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: -100px;
+	background: url('../img/sun.svg') no-repeat 0 0;
+	right: 20%;
+	animation-name: sun;
+	animation-duration: 85s;
+}
+
+@keyframes sun {
+
 }
 
 .meow{
@@ -73,6 +148,8 @@ body.body-state4 .rocket{
 	width: 210px;
 	display: none;
 }
+
+
 
 .meow.show {
 	display: block;
