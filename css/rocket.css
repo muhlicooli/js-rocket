@@ -24,8 +24,9 @@
 	width: 183.1px;
 	height: 270.7px;
 	background: url('../img/muhlifliegtlos1.svg') no-repeat 0 0;
-	transition: bottom 10000ms;
+	transition: bottom 15000ms;
 	margin-left: -100px;
+	visibility: visible;
 }
 
 body.body-state1 .rocket{
@@ -74,7 +75,7 @@ body.body-state4 .rocket{
 }
 
 .meow.show {
-	display: block !important;
+	display: block;
 }
 
 .state1,
@@ -113,5 +114,8 @@ border-radius: 20px;
 padding: 10px;
 color: #87CEEB;
 text-decoration: none;
+}
+
+
 }
 
