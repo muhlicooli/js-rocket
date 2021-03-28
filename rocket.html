@@ -4,36 +4,39 @@
 	<title>Flieg los, kleiner Muhli!</title>
 	<link rel="stylesheet" type="text/css" href="css/rocket.css">
 	<script type="text/javascript" src="js/rocket.js"></script>
+	<script type="text/javascript" src="js/toggle.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
 
 </head>
 <body class="body-state1">
+
 	<div class="left">
+		<a href="#" class="toggle" onclick='toggle()'>Switch!</a>
 		<div class="state1"> 
 			<h1>Muhlis Abenteuer</h1>
 			<a href="#" class="button" onclick="changeState(2)">Abheben!</a>
-			<a href="#" class="toggle">Switch!</a>
+			
 		</div>
 		<div class="state2"> 
 			<h1 id="countdown">10</h1>
 			<a href="#" class="button" onclick="changeState(1);">Abbrechen!</a>
-			<a href="#" class="toggle">Switch!</a>
+	
 		</div>
 		<div class="state3"> 
 			<h1>Huuuuiii</h1>
 			<a href="#" class="button" onclick="changeState(1);">Jaaa, nochmaaaal</a>
-			<a href="#" class="toggle">Switch!</a>
+
 		</div>
 		<div class="state4"> 
 			<h1>Supi!!!</h1>
 			<a href="#" class="button" onclick="changeState(1);">Jaaa, nochmaaaal</a>
-			<a href="#" class="toggle">Switch!</a>
+
 		</div>
 		<div class="state5"> 
 			<h1>Oh Nein!</h1>
 			<a href="#" class="button" onclick="changeState(1);">Reparieren</a>
-			<a href="#" class="toggle">Switch!</a>
+
 		</div>
 	</div>
 
