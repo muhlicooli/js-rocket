@@ -36,36 +36,4 @@ let changeState = function (state){
 	} else {
 		document.getElementById('rocket').style.visibility = 'visible';
 	}
-
-	// if (state == 3) {
-	// 	setTimeout (function() {
-	// 		changeState(4);
-	// 	}, 2000); 
-
-	// if (state==3) {
-	// 	document.getElementById('click').style.visibility = 'visibile';
-	// 	document.getElementById('rocket').style.visibility = 'hidden';
-
-	// }
-
-
-	};
-
-
-	// else if (state==3) {
-	// 	let success = setTimeout (function(){
-	// 		let randomNumber = Math.round(Math.random()*10);
-
-	// 		// success
-	// 		if (randomNumber > 4) {
-	// 			changeState(4);
-	// 		// oh no
-	// 		} else {
-	// 			changeState(5);
-	// 		} 
-	// 	}, 2000);
-	// };	
-
-	// if (state==3) {
-
-	// }
+};
