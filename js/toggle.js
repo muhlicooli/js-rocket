@@ -9,14 +9,18 @@ class Toggle {
     } 
     toggle() {
         this.buttons = document.getElementsByTagName('a');
+        this.ball = document.getElementById('ball');
 
         if(!this.state) {
             document.body.style.background = this.nightBg;
             this.changeButtonColor(this.nightFontColor);
+            this.ball.style.transform = 'translateX(25px)';
+
         } else {
             document.body.style.background = this.dayBg;
             document.body.style.background = this.dayBg; 
             this.changeButtonColor(this.dayFontColor);
+            this.ball.style.transform = 'translateX(-8px)';
         };
         this.state = !this.state;
     }

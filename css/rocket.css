@@ -7,7 +7,32 @@ body {
 	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }  
 
+.toggle {
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+	position: relative;
+    display: block;
+    cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border: 0px;
+	background-color: rgba(238, 238, 238,0.5);
+	z-index: 1;
+	outline: none;
+}
 
+#ball {
+	height: 30px;
+    width: 30px;
+	margin-top: -1px;
+	background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    transition: 0.5s;
+	transform: translateX(-8px);
+}
 
 #left{
 	position: fixed;
@@ -125,21 +150,6 @@ body.body-state4 .rocket{
 	to {left:3000px;}
 }
 
-.sun {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	bottom: -100px;
-	background: url('../img/sun.svg') no-repeat 0 0;
-	right: 20%;
-	animation-name: sun;
-	animation-duration: 85s;
-}
-
-@keyframes sun {
-
-}
-
 .meow{
 	position: absolute;
 	bottom: 100px;
@@ -150,8 +160,6 @@ body.body-state4 .rocket{
 	width: 210px;
 	display: none;
 }
-
-
 
 .meow.show {
 	display: block;
