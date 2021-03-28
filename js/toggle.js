@@ -1,3 +1,5 @@
 let toggle = function() {
-    console.log('toggle');
+    let rocket = document.getElementById('rocket');
+    console.log(rocket);
 }
+
